@@ -1,0 +1,67 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  background-color: #0B233F;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.App{
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 307px;
+    height: 307px;
+}
+.game {
+  border: 4px dotted #253952;
+  border-radius: 40px;
+}
+.game-board{
+  margin: 15px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  border-radius: 4px;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #253952;
+    border: 2px dotted #fff;
+    border-radius: 9px;
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 89px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 89px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:focus {
+  background: #ddd;
+}
+
+/* .game {
+  display: flex;
+  flex-direction: row;
+} */
+
+.game-info {
+  font-size: 18px;
+    text-align: center;
+    color: white;
+}
